@@ -2,5 +2,20 @@
     width: 1000px;
     height: 1000px;
 
-    position: relative; left: 400px; top: 300px;
+    position: relative; left: 800px; top: 300px;
+}
+
+.dropdownValgmuligheder{
+
+}
+
+
+.tekstTilDropdown{
+
+}
+
+
+h1{
+    position: relative; left: 710px; top: 300px;
+
 }

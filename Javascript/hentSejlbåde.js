@@ -20,8 +20,13 @@ function hentAlleSejlbåde() {
                 bådType.textContent = sejlbåd.bådType;
                 kolonner.appendChild(bådType);
 
+                let bådPoint = document.createElement("td")
+                bådPoint.textContent = sejlbåd.point;
+                kolonner.appendChild(bådPoint)
+
                 let sletKnap = document.createElement("td");
                 let sletButton = document.createElement("button");
+
                 sletButton.textContent = "Slet";
                 sletButton.addEventListener("click", function () {
                     // Funktion til fjernelse af data fra database
@@ -32,9 +37,9 @@ function hentAlleSejlbåde() {
 
                 let opdaterKnap = document.createElement("td");
                 const opdaterButton = document.createElement("button");
+
                 opdaterButton.textContent = "Opdater";
                 opdaterButton.addEventListener("click", function () {
-                    // Redirect to the new HTML site for updating the data
                     window.location.href = "opdaterSejlBåd.html";
                 });
                 opdaterKnap.appendChild(opdaterButton);

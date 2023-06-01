@@ -7,27 +7,65 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/opretSejlBådCSS.css">
+    <link rel="stylesheet" href="../CSS/NavbarCSS.css">
 </head>
 <body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="https://lwfiles.mycourse.app/635c0f0a21690fbd384b653a-public/a4ac5321563772ae89aea7e2656a75e4.png" width="200" height="50">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <div class="tekst1">
+                    <a class="nav-link" href="forside.html">Vis alle sejlbåde </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="tekst2">
+                    <a class="nav-link" href="opretSejlbåd.html">opret en sejlbåd</a>
+                </div>
+            </li>
+            <div class="tekst3">
+                <li class="nav-item">
+                    <a class="nav-link" href="KapsejladsRæs.html">Kapsejlads</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
 
 
 <h1>
     Opret en sejladsbåd
 </h1>
-<form id="formCreateKandidat" class="opretSejlBådForm">
-    <div class="mb-3">
-        <label for="opretNavnFormInput" class="col-form-label">Båd navn:</label>
-        <input name="bådNavn" type="text" class="form-control" id="opretNavnFormInput">
+
+<div class="opretSejlBådForm" >
+<form id="formOpretSejladsBåd" >
+    <div class="form-group">
+        <input name="bådNavn" type="text" class="form-control-sm" id="opretNavnFormInput" placeholder="Indtast Bådnavn">
     </div>
     <div class="mb-3">
+        <div class="tekstTilDropdown">
         <label for="dropdown">Vælg en bådtype:</label>
-        <select id="dropdown">
+        </div>
+        <div class="dropdownValgmuligheder">
+        <select class="form-select" id="dropdown">
         </select>
+        </div>
     </div>
-    <button class="btn btn-primary" id="opret-sejlbåd-knap">opret en sejladsbåd</button>
 </form>
+    <button class="btn btn-primary" id="opret-sejlbåd-knap">Opret en sejladsbåd</button>
+
+</div>
 </body>
 
 <script src="../Javascript/opretSejlBådJavascript.js"></script>
+
+
 
 </html>

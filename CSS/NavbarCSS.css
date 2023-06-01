@@ -1,0 +1,22 @@
+.tekst1{
+    font-size: 20px;
+    left: 10px;
+
+}
+
+.tekst2{
+    font-size: 20px;
+    left: -100px;
+}
+
+
+.tekst3{
+    font-size: 20px;
+    left: 10px;
+
+}
+
+body{
+    background-size: cover;
+
+}

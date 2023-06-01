@@ -7,43 +7,53 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="../Javascript/hentSejlbåde.js" defer></script>
     <link rel="stylesheet" href="../CSS/forsideCSS.css">
+    <link rel="stylesheet" href="../CSS/NavbarCSS.css">
 
 </head>
 <body>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <img src="https://lwfiles.mycourse.app/635c0f0a21690fbd384b653a-public/a4ac5321563772ae89aea7e2656a75e4.png" width="200" height="50">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="forside.html">Vis alle sejlbåde <span class="sr-only">(current)</span></a>
+                <div class="tekst1">
+                    <a class="nav-link" href="forside.html">Vis alle sejlbåde </a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="opretSejlbåd.html">opret en sejlbåd</a>
+                <div class="tekst2">
+                    <a class="nav-link" href="opretSejlbåd.html">opret en sejlbåd</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-
+            <div class="tekst3">
+                <li class="nav-item">
+                    <a class="nav-link" href="KapsejladsRæs.html">Kapsejlads</a>
+                </li>
+            </div>
         </ul>
     </div>
 </nav>
 
 
 <div class="tabelAlleSejlbåde">
-<table id="tableBodySejlBåde" class="table table-hover">
+<table id="tableBodySejlBåde" class="table table-hover border ">
     <thead class="table-primary">
     <tr>
         <th scope="col">Id</th>
         <th scope="col">BådNavn</th>
         <th scope="col">BådType</th>
+        <th scope="col">point</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     </tr>
     </thead>
     <tbody id="tableBody">
+    <button></button>
     </tbody>
 </table>
 </div>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Update Sejlbåd</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="../Javascript/VisAlleKapsejladsRæs.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="../Javascript/opdaterSejlbådJavascript.js" defer></script>
-  <link rel="stylesheet" href="../CSS/opdatersejladsBådCSS.css">
-  <link rel="stylesheet" href="../CSS/NavbarCSS.css">
+  <link rel="stylesheet" href="../CSS/KapsejladsRæsCSS.css">
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <img src="https://lwfiles.mycourse.app/635c0f0a21690fbd384b653a-public/a4ac5321563772ae89aea7e2656a75e4.png" width="200" height="50">
@@ -37,27 +37,21 @@
   </div>
 </nav>
 
+<h1>Kig på alle kapsejladserne og deres datoer!</h1>
 
-<h1>Opdater en sejlbåd!</h1>
-<form id="formOpretSejlbåd" class="opdaterSejlBådForm">
-  <div class="mb-3">
-    <label for="opretNavnFormInput" class="form-label-sm">Båd navn:</label>
-    <input name="bådNavn" type="text" class="form-control-sm" id="opretNavnFormInput">
-  </div>
-  <div class="mb-3">
-    <label for="dropdown">Vælg en bådtype:</label>
-    <select id="dropdown">
-    </select>
-  <br>
-    <label for="dropdownID">Vælg et ID for en båd:</label>
-    <select id="dropdownID">
-    </select>
-
-
-
-  </div>
-  <button class="btn btn-primary" id="opret-sejlbåd-knap">Opdater en sejladsbåd</button>
-</form>
+<div class="tabelAlleSejlbåde">
+  <table id="tableBodyKapsejladsRæs" class="table table-hover border border table align-middle">
+    <thead class="table-primary">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Lokation</th>
+      <th scope="col">Dato</th>
+      <th scope="col">Både</th>
+    </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
 </div>
 
 

@@ -58,6 +58,7 @@ function postData(url, data) {
             if (response.ok) {
                 console.log('Data blev sendt succesfuldt til databasen.');
                 alert("Båden med Navnet: " + bådNavnInput +  "er blevet oprettet i databasen")
+                location.href = "forside.html"
             } else {
                 console.error('Fejl ved afsendelse af data til databasen.');
             }
